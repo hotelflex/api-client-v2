@@ -5,25 +5,25 @@ var Entity = require('./Entity')
 var Method = require('./Method')
 var ApiError = require('./ApiError')
 var Analytics = require('./Analytics')
-// var Auth = require('./Auth')
-// var CampaignManagement = require('./CampaignManagement')
-// var HotelManagement = require('./HotelManagement')
-// var Integrations = require('./Integrations')
-// var InventoryManagement = require('./InventoryManagement')
-// var TripManagement = require('./TripManagement')
-// var UserManagement = require('./UserManagement')
-// var Accounting = require('./Accounting')
+var Auth = require('./Auth')
+var CampaignManagement = require('./CampaignManagement')
+var HotelManagement = require('./HotelManagement')
+var Integrations = require('./Integrations')
+var InventoryManagement = require('./InventoryManagement')
+var TripManagement = require('./TripManagement')
+var UserManagement = require('./UserManagement')
+var Accounting = require('./Accounting')
 
 var conf = {
   Analytics: Analytics,
-  // Auth: Auth,
-  // CampaignManagement: CampaignManagement,
-  // HotelManagement: HotelManagement,
-  // Integrations: Integrations,
-  // InventoryManagement: InventoryManagement,
-  // TripManagement: TripManagement,
-  // UserManagement: UserManagement,
-  // Accounting: Accounting,
+  Auth: Auth,
+  CampaignManagement: CampaignManagement,
+  HotelManagement: HotelManagement,
+  Integrations: Integrations,
+  InventoryManagement: InventoryManagement,
+  TripManagement: TripManagement,
+  UserManagement: UserManagement,
+  Accounting: Accounting,
 }
 
 function convertArgsToList(argsObj) {
