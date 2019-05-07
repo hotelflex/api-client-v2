@@ -34,9 +34,24 @@ module.exports = new Entity('systemManagers', {
     path: '/{id}/fetchLatestReports',
     urlParams: ['id'],
   }),
+  resyncLatestReports: new Method({
+    method: 'POST',
+    path: '/{id}/resyncLatestReports',
+    urlParams: ['id'],
+  }),
   update: new Method({
     method: 'POST',
     path: '/{id}/update',
+    urlParams: ['id'],
+  }),
+  requestEmailId: new Method({
+    method: 'POST',
+    path: '/{id}/requestEmailId',
+    urlParams: ['id'],
+  }),
+  requestAwsFolder: new Method({
+    method: 'POST',
+    path: '/{id}/requestAwsFolder',
     urlParams: ['id'],
   }),
 })
