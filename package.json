@@ -7,6 +7,7 @@
     "lodash": "^4.17.4",
     "lodash.isplainobject": "^4.0.6",
     "moment": "^2.18.1",
-    "qs": "^6.5.1"
+    "qs": "^6.5.1",
+    "uglify-js": "^3.5.11"
   }
 }

@@ -152,7 +152,7 @@ function createMethod(_path, opts, environment, authToken) {
       opts.customHeaders,
       _data,
       environment,
-      authToken,
+      authToken
     )
   }
 }
