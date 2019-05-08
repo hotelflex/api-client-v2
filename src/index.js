@@ -13,6 +13,7 @@ var InventoryManagement = require('./InventoryManagement')
 var TripManagement = require('./TripManagement')
 var UserManagement = require('./UserManagement')
 var Accounting = require('./Accounting')
+var InboundEmail = require('./InboundEmail')
 
 var conf = {
   Analytics: Analytics,
@@ -24,6 +25,7 @@ var conf = {
   TripManagement: TripManagement,
   UserManagement: UserManagement,
   Accounting: Accounting,
+  InboundEmail: InboundEmail,
 }
 
 function convertArgsToList(argsObj) {
@@ -48,7 +50,7 @@ function request(method, p, headers, data, environment, authToken) {
     headers.Authorization = 'Bearer ' + authToken
   }
 
-  if(method === 'POST' && !headers['Content-Type']) {
+  if (method === 'POST' && !headers['Content-Type']) {
     headers['Content-Type'] = 'application/json'
   }
 
@@ -109,6 +111,7 @@ var sMap = {
   USER: true,
   ANYL: true,
   ACC: true,
+  'INB-EMAIL': true,
 }
 function fixSvcCode(_p) {
   var paths = _p.split('/')
@@ -143,7 +146,14 @@ function createMethod(_path, opts, environment, authToken) {
     var _data = utils.getDataFromArgs(args)
 
     var p = urlIP(urlData).replace(/\\/g, '/')
-    return request(opts.method, p, opts.customHeaders, _data, environment, authToken)
+    return request(
+      opts.method,
+      p,
+      opts.customHeaders,
+      _data,
+      environment,
+      authToken,
+    )
   }
 }
 
