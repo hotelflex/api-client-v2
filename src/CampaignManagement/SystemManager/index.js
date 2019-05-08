@@ -12,7 +12,8 @@ module.exports = new Entity('systemManagers', {
   }),
   updateByHotel: new Method({
     method: 'POST',
-    path: '/updateByHotel',
+    path: '/updateByHotel/{hotelId}',
+    urlParams: ['hotelId'],
   }),
   retrieveByHotel: new Method({
     method: 'GET',

@@ -49,9 +49,9 @@ module.exports = new Entity('systemManagers', {
     path: '/{id}/requestEmailId',
     urlParams: ['id'],
   }),
-  requestAwsFolder: new Method({
+  configureAWS: new Method({
     method: 'POST',
-    path: '/{id}/requestAwsFolder',
+    path: '/{id}/configureAWS',
     urlParams: ['id'],
   }),
 })
