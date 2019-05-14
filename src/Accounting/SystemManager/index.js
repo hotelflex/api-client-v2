@@ -49,4 +49,9 @@ module.exports = new Entity('systemManagers', {
     method: 'POST',
     path: '/getExchangeRates',
   }),
+  issueInvoice: new Method({
+    method: 'POST',
+    path: '/issueInvoice/{hotelId}',
+    urlParams: ['hotelId'],
+  }),
 })

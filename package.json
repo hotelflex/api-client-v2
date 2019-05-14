@@ -1,6 +1,6 @@
 {
   "name": "@hotelflex/api-client-v2",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "src",
   "dependencies": {
     "isomorphic-fetch": "^2.2.1",

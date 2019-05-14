@@ -15,10 +15,6 @@ module.exports = new Entity('invoices', {
   search: new Method({
     method: 'GET',
   }),
-  create: new Method({
-    method: 'POST',
-    path: '/create',
-  }),
   cancelTransactions: new Method({
     method: 'POST',
     path: '/{id}/cancelTransactions',
