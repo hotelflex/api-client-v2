@@ -11,4 +11,8 @@ module.exports = new Entity('users', {
     path: '/{id}/archive',
     urlParams: ['id'],
   }),
+  updateByAccount: new Method({
+    method: 'POST',
+    path: '/updateByAccount',
+  }),
 })
