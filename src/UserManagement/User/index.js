@@ -15,4 +15,8 @@ module.exports = new Entity('users', {
     method: 'POST',
     path: '/updateByAccount',
   }),
+  retrieveByAccount: new Method({
+    method: 'GET',
+    path: '/retrieveByAccount',
+  }),
 })
