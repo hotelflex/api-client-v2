@@ -14,6 +14,7 @@ var TripManagement = require('./TripManagement')
 var UserManagement = require('./UserManagement')
 var Accounting = require('./Accounting')
 var InboundEmail = require('./InboundEmail')
+var INT_OSR = require('./INT_OSR')
 
 var conf = {
   Analytics: Analytics,
@@ -26,6 +27,7 @@ var conf = {
   UserManagement: UserManagement,
   Accounting: Accounting,
   InboundEmail: InboundEmail,
+  INT_OSR: INT_OSR,
 }
 
 function convertArgsToList(argsObj) {
@@ -112,6 +114,7 @@ var sMap = {
   ANYL: true,
   ACC: true,
   'INB-EMAIL': true,
+  INT_OSR: true,
 }
 function fixSvcCode(_p) {
   var paths = _p.split('/')
