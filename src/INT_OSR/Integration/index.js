@@ -8,7 +8,7 @@ module.exports = new Entity('integrations', {
   }),
   retrieve: new Method({
     method: 'GET',
-    path: '/:id',
+    path: '/{id}',
     urlParams: ['id'],
   }),
   create: new Method({
@@ -17,10 +17,10 @@ module.exports = new Entity('integrations', {
   }),
   update: new Method({
     method: 'POST',
-    path: '/:id',
+    path: '/{id}',
   }),
   requestEmailId: new Method({
     method: 'POST',
-    path: '/:id/requestEmailId',
+    path: '/{id}/requestEmailId',
   }),
 })
