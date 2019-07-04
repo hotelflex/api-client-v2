@@ -18,9 +18,11 @@ module.exports = new Entity('integrations', {
   update: new Method({
     method: 'POST',
     path: '/{id}',
+    urlParams: ['id'],
   }),
   requestEmailId: new Method({
     method: 'POST',
     path: '/{id}/requestEmailId',
+    urlParams: ['id'],
   }),
 })
