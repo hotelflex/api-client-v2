@@ -6,5 +6,10 @@ module.exports = new Entity('{systemManagerId}/roomType', {
     method: 'POST',
     path: '/{roomTypeId}/update',
     urlParams: [ 'systemManagerId', 'roomTypeId' ]
+  }),
+  getAvailability: new Method({
+    method: 'GET',
+    path: '/getAvailability',
+    urlParams: [ 'systemManagerId' ]
   })
 });
