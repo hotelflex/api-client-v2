@@ -15,6 +15,7 @@ var UserManagement = require('./UserManagement')
 var Accounting = require('./Accounting')
 var InboundEmail = require('./InboundEmail')
 var INT_OSR = require('./INT_OSR')
+var INT_IMPALA = require('./INT_IMPALA')
 
 var conf = {
   Analytics: Analytics,
@@ -28,6 +29,7 @@ var conf = {
   Accounting: Accounting,
   InboundEmail: InboundEmail,
   INT_OSR: INT_OSR,
+  INT_IMPALA: INT_IMPALA,
 }
 
 function convertArgsToList(argsObj) {
@@ -115,6 +117,7 @@ var sMap = {
   ACC: true,
   'INB-EMAIL': true,
   INT_OSR: true,
+  INT_IMPALA: true,
 }
 function fixSvcCode(_p) {
   var paths = _p.split('/')
