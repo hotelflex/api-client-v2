@@ -41,4 +41,12 @@ module.exports = new Entity('accounts', {
     path: '/{id}/endSessions',
     urlParams: ['id'],
   }),
+  requestPasswordReset: new Method({
+    method: 'POST',
+    path: '/requestPasswordReset',
+  }),
+  resetPassword: new Method({
+    method: 'POST',
+    path: '/resetPassword',
+  }),
 })
