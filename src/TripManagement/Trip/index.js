@@ -14,4 +14,8 @@ module.exports = new Entity('trips', {
     method: 'POST',
     path: '/getByIds',
   }),
+  getTripsAfterDate: new Method({
+    method: 'POST',
+    path: '/getTripsAfterDate',
+  }),
 })
