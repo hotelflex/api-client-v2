@@ -31,4 +31,9 @@ module.exports = new Entity('systemManagers', {
     method: 'POST',
     path: '/setup',
   }),
+  update: new Method({
+    method: 'POST',
+    path: '/{id}/update',
+    urlParams: ['id'],
+  }),
 })
