@@ -26,4 +26,9 @@ module.exports = new Entity('interactions', {
     path: '/{id}/reserve',
     urlParams: ['id'],
   }),
+  getLinkInfo: new Method({
+    method: 'GET',
+    path: '/link/{linkId}',
+    urlParams: ['linkId'],
+  }),
 })
