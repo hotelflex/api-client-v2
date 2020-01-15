@@ -6,4 +6,8 @@ module.exports = new Entity('roomNights', {
     method: 'GET',
     path: '/getAvailability',
   }),
+  get: new Method({
+    method: 'GET',
+    path: '/',
+  }),
 });
