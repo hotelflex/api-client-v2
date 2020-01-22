@@ -43,7 +43,7 @@ function convertArgsToList(argsObj) {
 
 function getApiUrl(environment) {
   if (environment === 'production') {
-    return 'https://api.hotelbox.xyz'
+    return 'https://api.flexfactory.app'
   } else {
     return 'http://localhost:5050'
   }
